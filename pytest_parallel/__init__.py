@@ -193,7 +193,7 @@ class ParallelRunner(object):
     def __init__(self, config):
         self._config = config
         self._manager = Manager()
-        self._log = py.log.Producer('pytest-parallel')
+        # self._log = py.log.Producer('pytest-parallel')
 
         reporter = config.pluginmanager.getplugin('terminalreporter')
 
